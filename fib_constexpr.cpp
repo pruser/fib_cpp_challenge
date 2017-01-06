@@ -27,4 +27,5 @@ int main() {
     // static_assert(basic::fib(10) == 55, ""); // Basic implementation cannot be used at compile time
 
     std::cout << basic::fib(10) << std::endl;
+    return 0;
 }

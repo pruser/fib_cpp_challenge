@@ -17,7 +17,7 @@ struct Fib<1> {
 
 int main() {
     static_assert(Fib<10>::val == 55, "");
-	std::cout << Fib<10>::val << std::endl;
+    std::cout << Fib<10>::val << std::endl;
     return 0;
 }
 
