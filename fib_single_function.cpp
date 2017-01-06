@@ -26,9 +26,7 @@ namespace single_function{
         {
             if(n < 2) {return n;}
             else {
-                using ull = unsigned long long;
-
-                constexpr auto impl = [](auto && self, std::size_t n, ull v1, ull v2, ull acc) {
+                constexpr auto impl = [](auto && self, auto n, auto v1, auto v2, auto acc) {
                     if(n == 0) return acc;
                     else return self(self, n-1, v2, v1+v2, acc + v2);
                 };
